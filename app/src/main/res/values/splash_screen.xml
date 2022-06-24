@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SabiNews.Starting" parent="Theme.SplashScreen">
+
+        <!--splash screen background-->
+        <item name="windowSplashScreenBackground">@color/splash_screen_background_color</item>
+
+        <!--splash screen drawable-->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_layer</item>
+
+        <!--post splash screen - displayed after splash screen-->
+        <item name="postSplashScreenTheme">@style/Theme.SabiNews</item>
+
+    </style>
+
+</resources>

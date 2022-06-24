@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SabiNews</string>
+    <string name="search_news">Search News</string>
+    <string name="icon">Icon</string>
+</resources>
