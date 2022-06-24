@@ -15,6 +15,7 @@
 * Compose Destinations - https://github.com/raamcosta/compose-destinations
 * Hilt
 * Pagination 3
+* Custom Chrome Tab Browser Implementation - For Full details screen
 * Retrofit
 * Landscapist - https://github.com/skydoves/Landscapist
 * Offline Capabilities - Using Remote Mediator
