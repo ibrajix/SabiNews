@@ -16,7 +16,7 @@
 * Hilt
 * Pagination 3
 * Retrofit
-* Glide
+* Landscapist - https://github.com/skydoves/Landscapist
 * Offline Capabilities - Using Remote Mediator
 * Light and Dark Mode
 * Search
