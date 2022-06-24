@@ -34,7 +34,7 @@ android {
     }
 
     buildTypes.each {
-        it.buildConfigField 'String', 'API_TOKEN', MyApiToken  //--< Delete this whole block, not needed when you have your own API_KEY
+        it.buildConfigField 'String', 'API_TOKEN', SabiApiToken  //--< Delete this whole block, not needed when you have your own API_KEY
     }
 
     kotlinOptions {
