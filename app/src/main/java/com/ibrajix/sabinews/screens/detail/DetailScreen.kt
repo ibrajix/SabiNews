@@ -14,6 +14,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.ContextCompat
 import com.ibrajix.sabinews.BuildConfig
 import com.ibrajix.sabinews.R
+import com.ibrajix.sabinews.utils.Utility.isPackageInstalled
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.annotation.RootNavGraph
 import java.net.URL
@@ -41,14 +42,16 @@ fun ShowCustomChromeTab(articleUrl: String?){
 
     val customBuilder = builder.build()
 
-    if (packageName != null){
+    if (context.isPackageInstalled(packageName)) {
+        //if chrome is available use chrome custom tabs
         customBuilder.intent.setPackage(packageName)
         customBuilder.launchUrl(context, Uri.parse(articleUrl))
-    }
-    else {
-        val i = Intent(Intent.ACTION_VIEW, Uri.parse(articleUrl))
-        activity?.startActivity(i)
-    }
+    } else {
 
+        //if not available use WebView to launch the url
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(articleUrl))
+        ContextCompat.startActivity(context, browserIntent, null)
+
+    }
 
 }

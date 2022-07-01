@@ -50,9 +50,7 @@ fun ListNewsContent(items: LazyPagingItems<Article>){
             article?.let { ArticleItem(it,
                 onClick = { url->
                     shouldOpenChromeTab = true
-                    if (url != null) {
-                        articleUrl = url
-                    }
+                    articleUrl = url ?: "https://google.com"
                 }
             )}
         }
