@@ -23,7 +23,7 @@
 * Search
 
 ## DOWNLOAD
-<a href="https://github.com/ibrajix/SabiNews/releases/download/v1.0/sabi-newsv1.apk">Click Here </a> to download and test the app
+<a href="https://github.com/ibrajix/SabiNews/releases/download/v1.1/sabi_news_1.1.apk">Click Here </a> to download and test the app
 
 ## NB
 I used a free tier plan of (https://newsapi.org/), so expect rate limitation :(
