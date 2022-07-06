@@ -34,6 +34,7 @@ fun ListNewsContent(items: LazyPagingItems<Article>){
 
     if (shouldOpenChromeTab){
         ShowCustomChromeTab(articleUrl)
+        shouldOpenChromeTab = false
     }
 
     LazyColumn(

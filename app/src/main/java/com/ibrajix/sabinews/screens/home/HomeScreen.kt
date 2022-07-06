@@ -35,8 +35,6 @@ import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 @Composable
 fun HomeScreen(navigator: DestinationsNavigator) {
 
-    AppBar(navigator)
-
     Scaffold(
         topBar = { AppBar(navigator = navigator) },
         content = {
