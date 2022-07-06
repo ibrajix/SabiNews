@@ -28,13 +28,12 @@ import com.skydoves.landscapist.glide.GlideImage
 @Composable
 fun ListNewsContent(items: LazyPagingItems<Article>){
 
-    var shouldOpenChromeTab by rememberSaveable { mutableStateOf(false) }
+    var shouldOpenChromeTab by remember { mutableStateOf(false) }
     var articleUrl by rememberSaveable { mutableStateOf("") }
 
 
     if (shouldOpenChromeTab){
         ShowCustomChromeTab(articleUrl)
-        shouldOpenChromeTab = !shouldOpenChromeTab
     }
 
     LazyColumn(

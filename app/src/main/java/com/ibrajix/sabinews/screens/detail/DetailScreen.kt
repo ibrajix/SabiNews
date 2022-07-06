@@ -26,8 +26,6 @@ fun ShowCustomChromeTab(articleUrl: String?){
 
     val packageName = "com.android.chrome"
 
-    val activity = (context as? Activity)
-
     val builder = CustomTabsIntent.Builder()
 
     builder.setShowTitle(true)
